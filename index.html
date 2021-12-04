@@ -8,6 +8,9 @@
     <!-- 'viewport' tem haver com a largura e altura do dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinasty</title>
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="assets/icomoon/style.css" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
@@ -20,17 +23,35 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
     <header id="header">
       <nav class="container">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
-        <div class="menu">...</div>
+        <!-- meun-->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
     <main>
+      <!-- Home -->
       <section class="section" id="home">
         <div class="container">
           <div class="image">
@@ -40,7 +61,7 @@
             />
           </div>
           <div class="text">
-            <h1>Saúde natural para os seus cabelos</h1>
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
             <p>
               Um salão exclusivo em São Paulo, especializado em tratamentos
               naturais.
@@ -49,9 +70,168 @@
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="container">Outra Section</div>
+
+      <div class="divider-1"></div>
+
+      <!-- About -->
+
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1599351430140-c70f0250bd70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhhaXJkcmVzc2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Lorem"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              molestias fuga perferendis corporis numquam at culpa minima
+              laudantium id sapiente, aperiam dicta perspiciatis veniam
+              provident accusamus amet facere, totam velit?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+              eaque ipsa, doloribus impedit, tenetur deleniti nesciunt quia rem
+              incidunt nostrum libero reiciendis at officiis. Natus officia
+              quisquam dolorum tempora ut.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              veniam a repellendus voluptas exercitationem culpa at expedita?
+              Vitae maiores, numquam qui necessitatibus quidem eos quas, facilis
+              magnam voluptates, delectus repellendus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- Services -->
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <div class="text">
+              <h2 class="title">Serviços</h2>
+              <p>
+                Com mais de 10 anos no mercado, o
+                <strong>Beautysalon</strong> já conquistou clientes de inúmeros
+                paúses com seus tratamentos exclusivos e totalmente naturais
+              </p>
+            </div>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia Capilar</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Assumenda magnam nobis ad quam eum perspiciatis
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Assumenda magnam nobis ad quam eum perspiciatis
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Assumenda magnam nobis ad quam eum perspiciatis
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <div class="divider-1"></div>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header>
+          <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+        </header>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Minus vero nemo magni deleniti voluptate tempore impedit
+                  possimus ipsa neque explicabo officia dolorum, perspiciatis
+                  quia qui ullam, necessitatibus odit iure aperiam.
+                </p>
+                <cite>
+                  <img src="assets/fotos/28.jpg" alt="Foto de Wanessa Souza" />
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Minus vero nemo magni deleniti voluptate tempore impedit
+                  possimus ipsa neque explicabo officia dolorum, perspiciatis
+                  quia qui ullam, necessitatibus odit iure aperiam.
+                </p>
+                <cite>
+                  <img
+                    src="assets/fotos/41.jpg"
+                    alt="Foto de Franciele Venega"
+                  />
+                  Franciele Venega
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Minus vero nemo magni deleniti voluptate tempore impedit
+                  possimus ipsa neque explicabo officia dolorum, perspiciatis
+                  quia qui ullam, necessitatibus odit iure aperiam.
+                </p>
+                <cite>
+                  <img src="assets/fotos/27.jpg" alt="Foto de Valeska Fabris" />
+                  Valeska Fabris
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <!-- Contact -->
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- main.js -->
+    <script src="main.js"></script>
   </body>
 </html>
